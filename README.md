@@ -16,6 +16,7 @@ A cheatsheet for understanding database terminology
 #scaling and replication
 - cluster: A group of two or more machines whose data (disk or memory) is replicated synchronously between nodes of the cluster.
 - shared nothing: A characteristic which simply means that two or more machines do not share disk or memory.
+- shared storage: Two or more machines share disk space.
 - master-slave: Updates are made to a single database, which are then propogated to other databases. This introduces a single point of failure, but is easy to configure.
 - master-master: Updates can be made to multiple databases simultaneously, which then propogate to other databases. This is more scalable as there is no longer a single server / database than can go down and destroy your write capability, but is more complicated to implement and will degrade ACID compliance.
 
